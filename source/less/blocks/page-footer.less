@@ -1,0 +1,51 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0px;
+  margin: 0px;
+}
+
+.page-footer__social {
+  display: flex;
+
+  margin: 0px;
+  margin-bottom: 41px;
+  padding: 0px;
+}
+
+.page-footer-list {
+  display: flex;
+  list-style: none;
+
+  margin: 0px;
+  margin-top: 43px;
+  padding: 0px;
+}
+
+.social__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: solid 3px #fefefe;
+  border-radius: 50%;
+
+  margin-right: 17px;
+}
+
+.copyright__link {
+  font-size: 14px;
+  color: @bg-dark;
+}
+
+.copyright__link::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/htmlacademy.svg);
+  width: 27px;
+  height: 34px;
+  background-repeat: no-repeat;
+}

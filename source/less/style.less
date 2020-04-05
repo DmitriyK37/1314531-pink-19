@@ -1,0 +1,47 @@
+@import "content.less";
+@import "font.less";
+@import "variables.less";
+@import "blocks/page-header.less";
+@import "blocks/page-main.less";
+@import "blocks/page-footer.less";
+
+body {
+  width: 320px;
+  margin: 0px;
+  padding: 0px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'OpenSans', "Arial", sans-serif;
+  color: #283645;
+  font-style: normal;
+
+  background-color: @bg-light;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ a {
+    text-decoration: none;
+}
