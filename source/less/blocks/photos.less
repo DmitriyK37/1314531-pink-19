@@ -1,0 +1,151 @@
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px;
+  margin-top: 95px;
+  padding: 0px;
+
+  background-color: #ffffff;
+  z-index: 5;
+}
+
+.photos__heading {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: @bg-dark;
+}
+
+.photos__heading--top {
+  width: 250px;
+  min-height: 186px;
+}
+
+.photos__heading--bot {
+  width: 260px;
+  min-height: 152px;
+}
+
+.photos__list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.photos__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.photos__img img {
+  display: block;
+}
+
+.photos__item p {
+  margin: 0px;
+}
+
+.photos__img {
+  margin: 0px;
+  padding: 0px;
+}
+
+.panorama {
+  position: absolute;
+  display: flex;
+  width: 140px;
+  height: 36px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  left: 160px;
+  background-color: #d22856;
+}
+
+.panorama__img {
+  width: 100%;
+}
+
+.photos__box {
+  display: flex;
+  flex-direction: column;
+  width: 263px;
+
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+  padding-left: 17px;
+
+  background-color: @bg-light;
+}
+
+.photos__box h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: @bg-dark;
+
+  margin: 0px;
+  margin-right: 8px;
+  padding: 0px;
+}
+
+.box__time {
+  font-size: 12px;
+  font-weight: 300;
+  color: @bg-dark;
+  text-transform: uppercase;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.box__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: @bg-dark;
+
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.box__like {
+  display: flex;
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #d22856;
+
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  padding-left: 33px;
+}
+
+.box__like::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon-heart.svg);
+  width: 13px;
+  height: 12px;
+  left: 0px;
+  bottom: 35px;
+  background-repeat: no-repeat;
+}
+
+.box__heading {
+  display: flex;
+}
