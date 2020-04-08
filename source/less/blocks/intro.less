@@ -1,4 +1,6 @@
-.intro-index::before {
+.intro-index {
+
+  &::before {
   content: "";
   position: absolute;
   top: 176px;
@@ -6,6 +8,8 @@
   width: 314px;
   height: 498px;
   background-repeat: no-repeat;
+  background-color: @bg-dark;
+  }
 }
 
 .intro {
@@ -17,12 +21,12 @@
 .intro__heading {
   width: 230px;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 28px;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
   margin: 0px;
-  margin-top: 89px;
+  margin-top: 91px;
   padding: 0px;
 }
 
@@ -51,9 +55,16 @@
   border-radius: 27px;
   outline: none;
   margin: 0;
-  margin-top: 28px;
+  margin-top: 30px;
   padding: 0;
   background-color: @bg-dark;
+ }
+
+.intro__button {
+  &:hover {
+  color: red;
+  background-color: #ffffff;
+  }
 }
 
 .intro__applications {
@@ -83,7 +94,7 @@
   color: #ffffff;
   text-align: center;
   margin: 0px;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 17px;
+  margin-bottom: 28px;
   padding: 0px;
 }
