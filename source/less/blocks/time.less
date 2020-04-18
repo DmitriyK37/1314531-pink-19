@@ -1,0 +1,79 @@
+.time {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  top: 13px;
+  background-color: #ffffff;
+  z-index: 6;
+
+  margin: 0;
+  padding: 0;
+}
+
+.watch {
+  display: flex;
+  position: relative;
+  width: 173px;
+  height: 173px;
+  font-size: 96px;
+  font-weight: bold;
+  color: #d22856;
+  align-items: center;
+  justify-content: center;
+
+  border: solid 15px #d22856;
+  border-radius: 50%;
+
+  margin: 0;
+  margin-top: 114px;
+  margin-left: 39px;
+  padding: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/icon-timer.svg);
+  }
+}
+
+.time__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+
+  margin: 0;
+  margin-bottom: 106px;
+  margin-left: 88px;
+  padding: 0px;
+}
+
+.time__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: @bg-black;
+
+  margin: 0;
+  margin-top: 98px;
+  padding: 0;
+}
+
+.time__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: @bg-dark;
+
+  margin: 0;
+  padding: 0;
+}
+
+.time__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d22856;
+  text-decoration: underline;
+
+  margin: 0;
+  margin-top: 3px;
+  padding: 0;
+}

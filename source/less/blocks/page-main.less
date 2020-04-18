@@ -1,5 +1,6 @@
 .page-main {
   position: relative;
+  width: 100%;
 
   top: -66px;
   padding-top: 65px;
@@ -13,4 +14,12 @@
   background-color: @bg-dark;
 
   z-index: 1;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    top: -110px;
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-color: transparent;
+  }
 }

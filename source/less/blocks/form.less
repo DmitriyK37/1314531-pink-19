@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 0px;
-  margin-top: 95px;
+  margin-top: 55px;
   padding: 0px;
 
   background-color: #ffffff;
@@ -16,11 +16,26 @@
   align-items: center;
 
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
   color: @bg-dark;
 
   &--top {
-    width: 250px;
-    min-height: 186px;
+    width: 275px;
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__heading {
+    font-size: 18px;
+    line-height: 30px;
+
+    &--top {
+      width: 490px;
+      min-height: 79px;
+      margin: 0;
+      padding: 0;
+      margin-top: 80px;
+    }
   }
 }

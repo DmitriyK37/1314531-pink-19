@@ -2,8 +2,15 @@
   display: flex;
 
   margin: 0px;
-  margin-bottom: 41px;
+  margin-bottom: 38px;
   padding: 0px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__social {
+    margin-bottom: 41px;
+    margin-left: 76px;
+  }
 }
 
 .page-footer-list {
@@ -25,4 +32,10 @@
   border-radius: 50%;
 
   margin-right: 17px;
+}
+
+@media (min-width: @tablet-width) {
+  .social__item {
+    border: solid 3px rgba(40, 54, 69, 0.1);
+  }
 }
