@@ -32,10 +32,22 @@
 
     &--top {
       width: 490px;
-      min-height: 79px;
       margin: 0;
       padding: 0;
-      margin-top: 80px;
+      margin-top: 92px;
     }
+  }
+}
+
+.form_title {
+  display: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: @bg-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .form_title {
+    display: flex;
   }
 }

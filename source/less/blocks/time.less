@@ -1,13 +1,24 @@
 .time {
-  display: flex;
+  display: none;
   position: relative;
   flex-wrap: wrap;
-  top: 13px;
   background-color: #ffffff;
   z-index: 6;
 
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .time {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .time {
+    top: 0px;
+  }
 }
 
 .watch {
@@ -36,6 +47,23 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .watch {
+    width: 219px;
+    height: 219px;
+    font-size: 120px;
+    margin-top: 124px;
+    margin-left: 153px;
+    border: solid 16px #d22856;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/icon-timer.svg);
+    }
+  }
+}
+
 .time__box {
   display: flex;
   flex-wrap: wrap;
@@ -47,15 +75,32 @@
   padding: 0px;
 }
 
+@media (min-width: @desktop-width) {
+  .time__box {
+    width: 530px;
+  }
+}
+
 .time__title {
+  width: 200px;
   font-size: 30px;
   line-height: 36px;
   font-weight: bold;
   color: @bg-black;
 
   margin: 0;
-  margin-top: 98px;
+  margin-top: 97px;
+  margin-bottom: 9px;
   padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .time__title {
+    min-width: 525px;
+    margin-top: 147px;
+    margin-bottom: 19px;
+    margin-left: 5px;
+  }
 }
 
 .time__description {
@@ -67,6 +112,16 @@
   padding: 0;
 }
 
+@media (min-width: @desktop-width) {
+  .time__description {
+    min-width: 530px;
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-left: 4px;
+  }
+}
+
 .time__link {
   font-size: 14px;
   line-height: 24px;
@@ -74,6 +129,16 @@
   text-decoration: underline;
 
   margin: 0;
-  margin-top: 3px;
+  margin-top: 10px;
   padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .time__link {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-top: 32px;
+    margin-left: 4px;
+  }
 }

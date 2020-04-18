@@ -14,6 +14,18 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-header__logo-desktop {
+    width: 147px;
+    height: 40px;
+
+    margin-top: 27px;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding: 0;
+  }
+}
+
 .open-nav {
   display: flex;
   height: 69px;
@@ -29,6 +41,12 @@
 @media (min-width: @tablet-width) {
   .open-nav {
     height: 109px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .open-nav {
+    display: none;
   }
 }
 

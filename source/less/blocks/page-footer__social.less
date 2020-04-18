@@ -13,6 +13,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-footer__social {
+    margin-left: 233px;
+  }
+}
+
 .page-footer-list {
   display: flex;
   list-style: none;
@@ -37,5 +43,14 @@
 @media (min-width: @tablet-width) {
   .social__item {
     border: solid 3px rgba(40, 54, 69, 0.1);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__item {
+    width: 46px;
+    height: 46px;
+
+    margin-right: 10px;
   }
 }
