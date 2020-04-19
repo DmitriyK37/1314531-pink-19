@@ -2,9 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0px;
+  margin: 0;
   margin-top: 83px;
-  padding: 0px;
+  padding: 0;
 
   background-color: #ffffff;
   z-index: 5;
@@ -27,7 +27,6 @@
 
     margin-top: 45px;
     margin-bottom: 49px;
-
   }
 
   &--bot {
@@ -59,7 +58,6 @@
 
 @media (min-width: @desktop-width) {
   .photos__heading {
-
     &--top {
       width: 575px;
       margin-bottom: 80px;
@@ -74,8 +72,8 @@
 }
 
 .photos__list {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: @tablet-width) {
@@ -113,13 +111,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .photos__item  {
-    margin-left: 0px;
+  .photos__item {
+    margin-left: 0;
     margin-right: 20px;
     margin-bottom: 54px;
   }
 
-  .photos__item:nth-child(3n+4) {
+  &:nth-child(3n+4) {
     margin-right: 0;
   }
 }
@@ -187,7 +185,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .panorama__img  {
+  .panorama__img {
     height: 506px;
   }
 }
@@ -296,7 +294,6 @@
 
 @media (min-width: @tablet-width) {
   .panorama__text {
-    // margin-bottom: 58px;
     order: 3;
   }
 }
@@ -317,7 +314,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../img/icon-heart.svg);
+    background-image: url("../img/icon-heart.svg");
     width: 13px;
     height: 12px;
     bottom: 24px;
@@ -339,10 +336,10 @@
     position: absolute;
     top: 16px;
     left: 423px;
-  }
 
-  &::before {
-    display: flex;
+    &::before {
+      display: flex;
+    }
   }
 }
 
