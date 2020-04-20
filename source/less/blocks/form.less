@@ -2,9 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0px;
-  margin-top: 95px;
-  padding: 0px;
+  margin: 0;
+  margin-top: 55px;
+  padding: 0;
 
   background-color: #ffffff;
   z-index: 5;
@@ -16,11 +16,38 @@
   align-items: center;
 
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
   color: @bg-dark;
 
   &--top {
-    width: 250px;
-    min-height: 186px;
+    width: 275px;
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__heading {
+    font-size: 18px;
+    line-height: 30px;
+
+    &--top {
+      width: 490px;
+      margin: 0;
+      padding: 0;
+      margin-top: 92px;
+    }
+  }
+}
+
+.form_title {
+  display: none;
+  font-size: 18px;
+  line-height: 30px;
+  color: @bg-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .form_title {
+    display: flex;
   }
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,12 +13,18 @@
           <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
             alt="Фотоприложение Пинк">
         </a>
-        <button class="main-nav__toggle main-nav__close" type="button"><img src="img/icon-menu-burger.svg"
-          width="50" height="24" alt="Открыть меню"></button>
+        <button class="main-nav__close main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
+            <a class="page-header__logo-desktop" href="#">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg"> -->
+                <img class="page-header__logo-image" src="img/logo-pink-white-desktop.svg" width="147" height="40"
+                alt="Фотоприложение Пинк">
+              </picture>
+            </a>
             <li class="site-list__item site-list__item--active">
               <a href="index.html">Главная</a>
             </li>
@@ -34,9 +41,9 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main photos-main">
       <div class="intro">
-        <h1 class="intro__heading">Фотографии пользователей</h1>
+        <h1 class="intro__heading photo__header">Фотографии пользователей</h1>
       </div>
       <section class="photos">
         <span class="photos__heading  photos__heading--top">
@@ -45,21 +52,21 @@
           Видите, как не хватает ваших?
         </span>
         <ul class="photos__list">
-          <li class="photos__item">
+          <li class="photos__item panorama__item">
             <div class="photos__img panorama__img">
               <p class="panorama">Панорама дня</p>
               <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорамное фото">
             </div>
-            <div class="photos__box">
+            <div class="panorama__box photos__box">
               <div class="box__heading">
                 <h4>Анна</h4>
                 <p class="box__time">(5 минут назад)</p>
               </div>
-              <p class="box__text">
+              <p class="box__text panorama__text">
                 Прыгать или нет? Напишите в комментарии свой совет и смотрите
                 прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-              <p class="box__like">Нравится: 215</p>
+              <p class="box__like panorama__like">Нравится: 215</p>
             </div>
           </li>
           <li class="photos__item">
