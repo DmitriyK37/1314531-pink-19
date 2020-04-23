@@ -47,7 +47,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Здесь можно скачать приложение.Почитать отзывы.</h1>
       <div class="intro intro-index">
-        <h2 class="intro__heading">Взгляните на жизнь иначе!</h2>
+        <h2 class="intro__heading index__header">Взгляните на жизнь иначе!</h2>
         <div class="intro__wrapper">
           <a href="#" class="intro__button">Скачать приложение</a>
           <ul class="intro__applications">
@@ -96,7 +96,7 @@
       <div class="time">
         <span class="watch">24</span>
         <div class="time__box">
-          <h3 class="time__title">Эффект на 24 часа!</h3>
+          <h3 class="time__title">Эффект на&nbsp;24 часа!</h3>
           <p class="time__description">
             Британские ученые провели исследования
             и доказали, что&nbsp;положительный эффект
@@ -108,8 +108,9 @@
       </div>
       <section class="reviews">
         <ul class="reviews__list">
-          <li class="reviews__item">
+          <li class="reviews__item active__reviews">
           <blockquote class="reviews__box">
+            <p class="reviews__box__about-author">25 лет, водитель трамвая</p>
             <cite class="reviews__box__author-name">Николай Петров</cite>
             <p class="reviews__box__text">«Это приложение перевернуло мой
               мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -121,15 +122,15 @@
           <li class="reviews__item"></li>
           <li class="reviews__item"></li>
         </ul>
-        <ul class="reviews__toggles slider__toggles">
-          <li>
-            <button class="slider__toggle" type="button">1</button>
+        <ul class="reviews__toggles">
+          <li class="slider">
+            <button class="slider__toggle active__toggle" type="button"></button>
           </li>
-          <li>
-            <button class="slider__toggle" type="button">2</button>
+          <li class="slider">
+            <button class="slider__toggle" type="button"></button>
           </li>
-          <li>
-            <button class="slider__toggle" type="button">3</button>
+          <li class="slider">
+            <button class="slider__toggle" type="button"></button>
           </li>
         </ul>
       </section>
@@ -137,35 +138,73 @@
         <div class="tariff__list">
           <table class="tariff__table">
             <tr>
+              <td class="empty"></td>
               <td class="whats-tariff">
-                Стандарт<br>3,99 USD
+                <p>База</p>
+                <p class="price">1,99 USD</p>
+              </td>
+              <td class="whats-tariff">
+                <div class="hit"></div>
+                <p>Стандарт</p>
+                <p class="price">3,99 USD</p>
+              </td>
+              <td class="whats-tariff">
+                <p>Анлим</p>
+                <p class="price">9,99 USD</p>
               </td>
             </tr>
             <tr>
+              <td class="tariff-name">
+                Розовый фильтр
+              </td>
+              <td class="tariff__table-item">
+                Розовый фильтр
+              </td>
+              <td class="tariff__table-item">
+                Розовый фильтр
+              </td>
               <td class="tariff__table-item">
                 Розовый фильтр
               </td>
             </tr>
             <tr>
+              <td class="tariff-name">
+                Смайлики
+              </td>
+              <td class="tariff__table-item">
+                Смайлики
+              </td>
+              <td class="tariff__table-item">
+                Смайлики
+              </td>
               <td class="tariff__table-item">
                 Смайлики
               </td>
             </tr>
             <tr>
+              <td class="tariff-name">
+                Комментарии
+              </td>
+              <td class="tariff__table-item">
+                Комментарии
+              </td>
+              <td class="tariff__table-item">
+                Комментарии
+              </td>
               <td class="tariff__table-item">
                 Комментарии
               </td>
             </tr>
           </table>
-          <ul class="tariff__toggles slider__toggles">
-            <li>
-              <button class="slider__toggle" type="button">1</button>
+          <ul class="tafiff__toggles">
+            <li class="slider">
+              <button class="tafiff__toggle" type="button"></button>
             </li>
-            <li>
-              <button class="slider__toggle" type="button">2</button>
+            <li class="slider">
+              <button class="tafiff__toggle active__toggle" type="button"></button>
             </li>
-            <li>
-              <button class="slider__toggle" type="button">3</button>
+            <li class="slider">
+              <button class="tafiff__toggle" type="button"></button>
             </li>
           </ul>
         </div>
@@ -173,16 +212,16 @@
       <section class="questions">
         <p class="questions__title">Остались вопросы?<br>Свяжитесь с нами!</p>
         <div class="questions__phone">
-          <span class="questions__heading">Звоните</span>
+          <span class="questions__heading">Звоните:</span>
           <a class="contacts__phone" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
         </div>
         <div class="questions__write">
-          <span class="questions__heading">Пишите</span>
+          <span class="questions__heading">Пишите:</span>
           <a class="contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="questions__come">
           <span class="questions__heading">Приезжайте в гости:</span>
-          <p>ул. Большая Конюшенная, 19/8</p>
+          <p class="questions__address">ул. Большая Конюшенная, 19/8</p>
         </div>
       </section>
     </main>
