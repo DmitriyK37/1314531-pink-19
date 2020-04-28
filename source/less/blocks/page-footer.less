@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+.footer__modile {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     flex-direction: row;
@@ -17,6 +21,12 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     min-height: 197px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .footer__modile {
+    display: flex;
   }
 }
 

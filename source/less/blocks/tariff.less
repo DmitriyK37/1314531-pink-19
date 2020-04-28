@@ -1,11 +1,12 @@
 .tariff {
   display: flex;
-  width: 838px;
+  // width: 838px;
   margin: 0;
   margin-top: 47px;
   padding: 0;
 
   background-color: @bg-light;
+  overflow-x: hidden;
 }
 
 @media (min-width: @tablet-width) {
@@ -23,6 +24,10 @@
 }
 
 .tariff__table {
+  position: relative;
+  min-width: 838px;
+  right: 260px;
+
   border-collapse: collapse;
   border: none;
 }
@@ -225,11 +230,20 @@
   outline: none;
   opacity: 0.3;
   background-color: @bg-dark;
-  border: none;
+  border: solid 3px #ffffff;
+  box-sizing: content-box;
   border-radius: 50%;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
-.active__toggle {
+.toggle__active {
   background-color: #ffffff;
   border: solid 3px @bg-dark;
   opacity: 1;
