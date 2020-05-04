@@ -68,6 +68,39 @@
   }
 }
 
+.reviews__left,
+.reviews__right {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__left {
+    display: flex;
+    position: absolute;
+    top: 218px;
+    left: 125px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__right {
+    display: flex;
+    position: absolute;
+    top: 218px;
+    right: 125px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    opacity: 0.3;
+  }
+}
+
 .reviews__item {
   display: none;
 }
