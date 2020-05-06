@@ -12,9 +12,9 @@
     position: absolute;
     width: 0;
     height: 0;
-    bottom: -30px;
+    bottom: 166px;
     border-style: solid;
-    border-width: 30px 160px 0 160px;
+    border-width: 32px 160px 0 160px;
     border-color: #ffffff transparent transparent transparent;
   }
 }
@@ -25,7 +25,7 @@
     margin-top: 70px;
 
     &::after {
-      bottom: -65px;
+      bottom: 307px;
       border-width: 65px 330px 0 330px;
     }
   }
@@ -33,25 +33,23 @@
 
 @media (min-width: @desktop-width) {
   .questions {
-    margin-top: 158px;
+    margin-top: 95px;
 
     &::after {
-      bottom: -105px;
-      border-width: 105px 600px 0 600px;
+      bottom: 400px;
+      border-width: 100px 600px 0 600px;
     }
   }
 }
 
-.questions__title p {
-  margin: 0;
-  padding: 0;
-}
-
 .questions__title {
+  display: flex;
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
   color: @bg-dark;
+
+  text-align: center;
   margin: 0;
   margin-top: 44px;
   margin-bottom: 31px;
@@ -66,9 +64,9 @@
     font-size: 40px;
     line-height: 48px;
 
-    margin-top: 46px;
-    margin-bottom: 39px;
-    padding-left: 95px;
+    margin-top: 44px;
+    margin-bottom: 40px;
+    padding-left: 93px;
   }
 }
 
@@ -100,7 +98,7 @@
   .questions__phone {
     order: 1;
     margin-top: 13px;
-    margin-left: 132px;
+    margin-left: 133px;
   }
 }
 
@@ -122,7 +120,7 @@
 
 @media (min-width: @desktop-width) {
   .questions__heading {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
   }
 }
 
@@ -156,8 +154,9 @@
   color: #d22856;
 
   margin: 0;
-  margin-top: 2px;
+  margin-top: 1px;
   margin-bottom: 22px;
+  margin-left: 3px;
   padding: 0;
 
   &:hover {
@@ -187,8 +186,8 @@
 @media (min-width: @desktop-width) {
   .questions__come {
     order: 2;
-    margin-top: 13px;
-    margin-left: 16px;
+    margin-top: 12px;
+    margin-left: 19px;
   }
 }
 
@@ -212,8 +211,43 @@
 
 @media (min-width: @desktop-width) {
   .questions__address {
-    line-height: 26px;
+    line-height: 28px;
 
     margin-bottom: 24px;
+  }
+}
+
+.map {
+  display: flex;
+  height: 198px;
+  position: relative;
+  overflow-y: hidden;
+
+  & img {
+    display: block;
+    position: relative;
+    top: -447px;
+
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    width: 660px;
+    height: 372px;
+
+    & img {
+      top: -315px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    order: 4;
+    width: 1200px;
+    height: 500px;
   }
 }
