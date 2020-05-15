@@ -2,14 +2,12 @@
   display: flex;
 
   margin: 0;
-  margin-bottom: 38px;
   padding: 0;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__social {
-    margin-bottom: 41px;
-    margin-left: 76px;
+    margin-left: 73px;
   }
 }
 
@@ -24,24 +22,34 @@
   list-style: none;
 
   margin: 0;
-  margin-top: 43px;
+  margin-top: 35px;
+  margin-left: 12px;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer-list {
+    margin-top: 3px;
+    margin-left: 0;
+  }
 }
 
 .social__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: solid 3px #fefefe;
+  width: 44px;
+  height: 44px;
+  border: solid 3px rgba(40, 54, 69, 0.1);
   border-radius: 50%;
 
-  margin-right: 17px;
+  margin-right: 12px;
 }
 
 @media (min-width: @tablet-width) {
   .social__item {
+    width: 46px;
+    height: 46px;
     border: solid 3px rgba(40, 54, 69, 0.1);
   }
 }

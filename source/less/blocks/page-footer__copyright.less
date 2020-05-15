@@ -1,27 +1,51 @@
-.copyright__link {
-  font-size: 14px;
-  color: @bg-dark;
+.page-footer__copyright {
+  margin-top: 40px;
+  margin-right: 43px;
+  margin-bottom: 47px;
 
   &::after {
     content: "";
     width: 27px;
     height: 34px;
     position: absolute;
+    right: 95px;
     background-image: url("../img/htmlacademy.svg");
-
-
     background-repeat: no-repeat;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .copyright__link {
-    margin-left: 77px;
-  }
+  .page-footer__copyright {
+    display: flex;
 
-  &::after img {
-    width: 100%;
-    height: 34px;
+    margin-top: 19px;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    &::after {
+      right: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__copyright {
+    margin-top: 18px;
+
+    &::after {
+      right: 130px;
+    }
+  }
+}
+
+.copyright__link {
+  font-size: 14px;
+  color: @bg-dark;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    margin-left: 85px;
   }
 }
 
@@ -29,10 +53,5 @@
   .copyright__link {
     font-size: 18px;
     margin-left: 220px;
-  }
-
-  &::after img {
-    width: 27px;
-    height: 34px;
   }
 }

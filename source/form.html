@@ -49,88 +49,102 @@
         <h1 class="intro__heading form__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
       <section class="form-box">
+        <p class="form__heading__wrapper">
         <span class="form__heading  form__heading--top">
           Поделитесь своей историей и получите шанс выиграть ценный приз —
           1000 миль на вашу бонусную карту!
         </span>
-        <span class="form__title">Пожалуйста заполните форму ниже:</span>
+        <span class="form__title">Пожалуйста, заполните форму ниже:</span>
+        </p>
         <form class="form" action="#" method="POST">
-          <fieldset class="form__profile">
+          <fieldset class="form__profile personal">
             <p>
-              <label class="fields__title" for="surname">Фамилия:</label>
+              <label class="fields__title personal__title" for="surname">Фамилия:</label>
               <input class="profile-input" type="text" id="surname" name="surname" value="" placeholder="Укажите фамилию *">
             </p>
             <p>
-              <label class="fields__title" for="name">Имя:</label>
-              <input class="profile-input" type="text" id="name" name="name" value="" placeholder="Введите ваше имя *">
+              <label class="fields__title personal__title" for="name">Имя:</label>
+              <input class="profile-input name-input" type="text" id="name" name="name" value="" placeholder="Введите ваше имя *">
             </p>
             <p>
-              <label class="fields__title" for="patronymic">Отчество:</label>
-              <input class="profile-input" type="patronymic" id="name" name="patronymic" value="" placeholder="Ну и отчество тоже">
+              <label class="fields__title personal__title" for="patronymic">Отчество:</label>
+              <input class="profile-input patronymic-input" type="patronymic" id="name" name="patronymic" value="" placeholder="Ну и отчество тоже">
             </p>
           </fieldset>
-          <fieldset class="form__progress">
-            <legend class="form__progress__title">Ваши безбашенные достижения в путешествии</legend>
-            <ul>
-              <li class="form__option">
-                <input class="visually-hidden checkbox-input" type="checkbox" name="one" id="option-one" checked>
-                <label for="option-one">Сделал селфи с акулой</label>
-              </li>
-              <li class="form__option">
-                <input class="visually-hidden checkbox-input" type="checkbox" name="two" id="option-two" checked>
-                <label for="option-two">Обгорел на пляже</label>
-              </li>
-              <li class="form__option">
-                <input class="visually-hidden checkbox-input" type="checkbox" name="three" id="option-three" checked>
-                <label for="option-three">Видел Чака Норриса</label>
-              </li>
-              <li class="form__option">
-                <input class="visually-hidden checkbox-input" type="checkbox" name="four" id="option-four" checked>
-                <label for="option-four">Накупил сувениров</label>
-              </li>
-              <li class="form__option">
-                <input class="visually-hidden checkbox-input" type="checkbox" name="five" id="option-five" checked>
-                <label for="option-five">Удержал башню</label>
-              </li>
-              <li class="form__option">
-                <input class="visually-hidden checkbox-input" type="checkbox" name="six" id="option-six" checked>
-                <label for="option-six">Разгромил отель</label>
-              </li>
-            </ul>
+          <div class="form__progress__box">
+            <fieldset class="form__progress">
+              <legend class="form__progress__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul>
+                <li class="form__option">
+                  <input class="visually-hidden checkbox-input" type="checkbox" name="one" id="option-one" checked>
+                  <label for="option-one">Сделал селфи с акулой</label>
+                </li>
+                <li class="form__option">
+                  <input class="visually-hidden checkbox-input" type="checkbox" name="two" id="option-two" checked>
+                  <label for="option-two">Обгорел на пляже</label>
+                </li>
+                <li class="form__option">
+                  <input class="visually-hidden checkbox-input" type="checkbox" name="three" id="option-three">
+                  <label for="option-three">Видел Чака Норриса</label>
+                </li>
+                <li class="form__option">
+                  <input class="visually-hidden checkbox-input" type="checkbox" name="four" id="option-four">
+                  <label for="option-four">Накупил сувениров</label>
+                </li>
+                <li class="form__option">
+                  <input class="visually-hidden checkbox-input" type="checkbox" name="five" id="option-five" checked>
+                  <label for="option-five">Удержал башню</label>
+                </li>
+                <li class="form__option">
+                  <input class="visually-hidden checkbox-input" type="checkbox" name="six" id="option-six">
+                  <label for="option-six">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="form__profile contacts">
+            <legend class="contacts__heading">Контактная информация</legend>
+            <div class="contacts__wrapper">
+              <p>
+                <label class="fields__title contacts__title" for="phone">Номер телефона</label>
+                <input class="profile-input phone__input" type="text" id="phone" name="phone" value="" placeholder="Номер, пожалуйста">
+              </p>
+              <p>
+                <label class="fields__title contacts__title" for="email">Адрес почты</label>
+                <input class="profile-input email__input" type="text" id="email" name="email" value="" placeholder="Введите почту *">
+              </p>
+            </div>
           </fieldset>
-          <fieldset class="form__profile">
-            <p>
-              <label class="fields__title" for="phone">Номер телефона</label>
-              <input class="profile-input" type="text" id="phone" name="phone" value="" placeholder="Номер, пожалуйста">
-            </p>
-            <p>
-              <label class="fields__title" for="email">Адрес почты</label>
-              <input class="profile-input" type="text" id="email" name="email" value="" placeholder="Введите почту *">
-            </p>
-          </fieldset>
-          <fieldset class="form__progress">
-            <legend class="form__progress__title">С каким приложениемпутешествовали?</legend>
-            <ul>
-              <li class="form__option">
-                <input class="visually-hidden input-radio" type="radio" name="iOS" value="sistem" id="option-iOS" checked>
-                <label for="option-iOS">Pink для iOS</label>
-              </li>
-              <li class="form__option">
-                <input class="visually-hidden input-radio" type="radio" name="Android" value="sistem" id="option-Android" checked>
-                <label for="option-Android">Pink на Android</label>
-              </li>
-              <li class="form__option">
-                <input class="visually-hidden input-radio" type="radio" name="Windows" value="sistem" id="option-Windows" checked>
-                <label for="option-Windows">Windows Phone</label>
-              </li>
-            </ul>
-          </fieldset>
-          <p class="message">
-            <label class="message-title" for="message">Опишите свои эмоции</label>
+          <div class="form__progress__box sistem__box">
+            <fieldset class="form__progress sistem">
+              <legend class="form__progress__title sistem__title">С каким приложением путешествовали?</legend>
+              <ul>
+                <li class="form__option sistem__option">
+                  <input class="visually-hidden sistem-input" type="checkbox" name="iOS" value="sistem iOS" id="option-iOS" checked>
+                  <label for="option-iOS">Pink для iOS</label>
+                </li>
+                <li class="form__option sistem__option">
+                  <input class="visually-hidden sistem-input" type="checkbox" name="Android" value="sistem Android" id="option-Android">
+                  <label for="option-Android">Pink на Android</label>
+                </li>
+                <li class="form__option sistem__option">
+                  <input class="visually-hidden sistem-input" type="checkbox" name="Windows" value="sistem Windows" id="option-Windows">
+                  <label for="option-Windows">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <fieldset class="message">
+            <legend class="message-title" for="message">Опишите свои эмоции</legend>
             <textarea name="message" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </p>
-          <div class="form__send"><button type="submit" class="send">Отправить форму</button></div>
-          <span>* — обязательные поля</span>
+          </fieldset>
+          <div class="form__send">
+            <button type="submit" class="send">Отправить форму</button>
+            <span class="required-fields">
+              <p class="star">*</p>
+              — обязательные<p class="fill__fields">&nbspдля заполнения&nbsp</p>поля
+            </span>
+          </div>
         </form>
       </section>
     </main>
