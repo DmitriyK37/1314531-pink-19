@@ -17,6 +17,18 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-footer__social--photo {
+    margin-left: 239px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__social--form {
+    margin-left: 239px;
+  }
+}
+
 .page-footer-list {
   display: flex;
   list-style: none;
@@ -44,6 +56,14 @@
   border-radius: 50%;
 
   margin-right: 12px;
+
+  &:hover {
+    border: solid 3px rgba(40, 54, 69);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -43,8 +43,16 @@
 
   &::after {
     content: "";
+    display: flex;
     position: absolute;
+    top: -70px;
+    left: -19;
+    width: 238px;
+    height: 276px;
     background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
+    z-index: -1;
   }
 }
 
@@ -58,9 +66,10 @@
     border: solid 16px #d22856;
 
     &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/icon-timer.svg");
+      width: 298px;
+      height: 345px;
+      top: -87px;
+      background-size: 298px 345px;
     }
   }
 }
