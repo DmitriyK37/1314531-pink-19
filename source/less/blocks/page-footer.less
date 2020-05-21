@@ -56,3 +56,39 @@
     margin-bottom: 14px;
   }
 }
+
+.footer__logo-mobile {
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: @bg-dark;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer__logo-mobile {
+    display: none;
+  }
+}
+
+.footer__logo-desktop {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .footer__logo-desktop {
+    display: flex;
+
+    &:hover {
+      fill: #d22856;
+    }
+
+    &:active {
+      fill: @bg-dark;
+      opacity: 0.3;
+    }
+  }
+}

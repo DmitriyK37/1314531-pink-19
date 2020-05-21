@@ -2,16 +2,6 @@
   margin-top: 40px;
   margin-right: 43px;
   margin-bottom: 47px;
-
-  &::after {
-    content: "";
-    width: 27px;
-    height: 34px;
-    position: absolute;
-    right: 95px;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -22,10 +12,6 @@
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 78px;
-
-    &::after {
-      right: 20px;
-    }
   }
 }
 
@@ -33,10 +19,6 @@
   .page-footer__copyright {
     margin-top: 16px;
     margin-left: 220px;
-
-    &::after {
-      right: 130px;
-    }
   }
 }
 
@@ -67,5 +49,36 @@
 @media (min-width: @desktop-width) {
   .copyright__link {
     font-size: 18px;
+  }
+}
+
+.logo__image-academy {
+  display: flex;
+  position: absolute;
+  fill: #d22856;
+
+  bottom: 40px;
+  right: 95px;
+
+  &:hover {
+    fill: @bg-dark;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .logo__image-academy {
+    top: 52px;
+    right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__image-academy {
+    top: 80px;
+    right: 130px;
   }
 }

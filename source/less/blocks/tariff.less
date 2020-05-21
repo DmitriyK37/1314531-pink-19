@@ -1,5 +1,6 @@
 .tariff {
   display: flex;
+  justify-content: center;
   margin: 0;
   margin-top: 48px;
   padding: 0;
@@ -16,7 +17,26 @@
 
 @media (min-width: @desktop-width) {
   .tariff {
-    margin-top: 149px;
+    margin-top: 107px;
+    margin-bottom: 97px;
+  }
+}
+
+.tariff__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+}
+
+@media (min-width: @tablet-width) {
+  .tariff__list {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariff__list {
+    width: 1200px;
   }
 }
 
@@ -306,8 +326,8 @@
 }
 
 .tafiff__toggles {
-  list-style: none;
   display: flex;
+  list-style: none;
 
   margin: 0;
   margin-top: 40px;

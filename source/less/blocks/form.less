@@ -241,8 +241,17 @@
   margin-top: 5px;
   margin-bottom: 17px;
   padding: 0;
+  outline: none;
 
   border: solid 2px #e5e5e5;
+
+  &:hover {
+    border: solid 2px @bg-dark;
+  }
+
+  &:active {
+    border: solid 2px #d22856;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -437,10 +446,10 @@
       content: "";
       position: absolute;
       width: 60px;
-      height: 60px;
+      height: 59px;
       z-index: 10;
       top: 57px;
-      left: 319px;
+      left: 317px;
 
       background-color: #e5e5e5;
       background-image: url("../img/icon-phone.svg");
@@ -452,10 +461,10 @@
       content: "";
       position: absolute;
       width: 60px;
-      height: 60px;
+      height: 58px;
       z-index: 10;
-      top: 189px;
-      left: 319px;
+      top: 190px;
+      left: 317px;
       background-color: #e5e5e5;
       background-image: url("../img/icon-mail.svg");
       background-position: center;
@@ -469,13 +478,14 @@
     margin-bottom: 30px;
 
     &::after {
+      height: 58px;
       top: 55px;
-      left: 34px;
+      left: 33px;
     }
 
     &::before {
       top: 55px;
-      left: 480px;
+      left: 479px;
     }
   }
 }
@@ -594,7 +604,20 @@
     margin: 0;
     padding: 0;
     border: solid 2px #e5e5e5;
+    border-radius: 3px;
     background-color: #ffffff;
+  }
+
+  &:hover {
+    &::before {
+      border: solid 2px @bg-dark;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: solid 2px #d22856;
+    }
   }
 }
 
@@ -628,6 +651,18 @@
     border: solid 2px #e5e5e5;
     border-radius: 50%;
     background-color: #ffffff;
+  }
+
+  &:hover {
+    &::before {
+      border: solid 2px @bg-dark;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: solid 2px #d22856;
+    }
   }
 }
 
@@ -819,6 +854,15 @@
   margin-top: 50px;
   padding: 0;
   background-color: #2aab6d;
+
+  &:hover {
+    border: solid 2px #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
