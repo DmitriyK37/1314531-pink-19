@@ -1,49 +1,38 @@
 .page-main {
+  display: block;
   position: relative;
   width: 100%;
 
   padding: 0;
-  padding-top: 65px;
   margin: 0;
+}
 
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-color: @bg-light;
-
-  z-index: 1;
+.page-main--index {
+  background-color: @bg-dark;
 }
 
 @media (min-width: @tablet-width) {
-  .page-main {
-    padding-top: 61px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+  .page-main--index {
     background-color: @bg-light;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .page-main {
-    padding-top: 65px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-color: @bg-light;
-  }
+.page-main--photo {
+  background-size: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .page-main--photo {
-    padding-top: 64px;
+    background-size: auto;
   }
+}
+
+.page-main--form {
+  background-size: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .page-main--form {
-    padding-top: 63px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .page-main--form {
-    padding-top: 65px;
+    background-size: auto;
   }
 }

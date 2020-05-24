@@ -23,6 +23,7 @@
   .main-nav {
     display: flex;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -33,7 +34,18 @@
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.main-nav__box {
+  display: flex;
+  width: 100%;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__box {
+    width: auto;
+    justify-content: center;
   }
 }
 
@@ -48,6 +60,7 @@
     height: 40px;
 
     margin-right: 172px;
+    margin-left: 0;
   }
 }
 
@@ -159,6 +172,7 @@
       content: "";
       display: flex;
       position: absolute;
+      left: 0;
       bottom: 33px;
       height: 2px;
       width: 100%;

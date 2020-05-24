@@ -1,29 +1,32 @@
 .form-box {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   justify-content: center;
 
   margin: 0;
-  margin-top: 55px;
   padding: 0;
   background-color: #ffffff;
   z-index: 5;
 }
 
-.form__heading__wrapper {
+.heading__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
 @media (min-width: @tablet-width) {
-  .form__heading__wrapper {
+  .heading__wrapper {
     display: inline;
     text-align: center;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form__heading__wrapper {
+  .heading__wrapper {
     width: 760px;
 
     margin-top: 91px;
@@ -63,7 +66,6 @@
   .form__heading {
     &--top {
       display: inline;
-      width: 760px;
     }
   }
 }
@@ -83,9 +85,15 @@
   }
 }
 
+.form__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .form {
   display: flex;
   flex-direction: column;
+  width: 320px;
 
   margin: 0;
   margin-top: 34px;
@@ -94,6 +102,7 @@
 
 @media (min-width: @tablet-width) {
   .form {
+    width: 660px;
     margin-top: 66px;
   }
 }
@@ -102,9 +111,14 @@
   .form {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 1200px;
 
     margin-top: 71px;
   }
+}
+
+.test {
+  display: flex;
 }
 
 .form fieldset {
@@ -119,6 +133,11 @@
 .form__profile {
   display: flex;
   flex-wrap: wrap;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: @bg-dark;
+  font-weight: normal;
 
   margin: 0;
   margin-bottom: 25px;
@@ -136,14 +155,6 @@
 
   & ::placeholder {
     font-family: "OpenSans", "Arial", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: @bg-dark;
-    font-weight: normal;
-
-    margin: 0;
-    padding: 0;
-    padding-left: 20px;
   }
 }
 
@@ -160,6 +171,7 @@
 
 @media (min-width: @desktop-width) {
   .personal {
+    width: 450px;
     margin-top: 9px;
     margin-bottom: 0;
     margin-left: 110px;
@@ -211,8 +223,67 @@
 
 @media (min-width: @tablet-width) {
   .contacts__title {
+    position: relative;
     margin-bottom: 25px;
     margin-left: 78px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title--phone {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 59px;
+      z-index: 10;
+      top: -71px;
+      left: 417px;
+      right: 0;
+
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-phone.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__title--phone {
+    &::after {
+      content: "";
+      top: -71px;
+      left: 294px;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title--email {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 59px;
+      z-index: 10;
+      top: -71px;
+      left: 417px;
+      right: 0;
+      background-color: #e5e5e5;
+      background-image: url("../img/icon-mail.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title--email {
+    &::before {
+      top: -71px;
+      left: 294px;
+    }
   }
 }
 
@@ -231,7 +302,7 @@
 
 .profile-input {
   display: flex;
-  width: 276px;
+  width: 256px;
   min-height: 59px;
   font-size: 18px;
   line-height: 30px;
@@ -241,6 +312,7 @@
   margin-top: 5px;
   margin-bottom: 17px;
   padding: 0;
+  padding-left: 20px;
   outline: none;
 
   border: solid 2px #e5e5e5;
@@ -256,7 +328,7 @@
 
 @media (min-width: @tablet-width) {
   .profile-input {
-    width: 521px;
+    width: 501px;
 
     margin-left: 19px;
     margin-bottom: 47px;
@@ -265,7 +337,7 @@
 
 @media (min-width: @desktop-width) {
   .profile-input {
-    width: 336px;
+    width: 316px;
 
     margin-bottom: 47px;
   }
@@ -273,7 +345,7 @@
 
 @media (min-width: @tablet-width) {
   .name-input {
-    width: 561px;
+    width: 541px;
 
     margin-left: 20px;
   }
@@ -281,13 +353,13 @@
 
 @media (min-width: @desktop-width) {
   .name-input {
-    width: 376px;
+    width: 356px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .patronymic-input {
-    width: 522px;
+    width: 502px;
 
     margin-bottom: 0;
     margin-left: 19px;
@@ -296,7 +368,7 @@
 
 @media (min-width: @desktop-width) {
   .patronymic-input {
-    width: 337px;
+    width: 317px;
   }
 }
 
@@ -304,7 +376,7 @@
   .phone__input,
   .email__input {
     position: relative;
-    width: 496px;
+    width: 476px;
 
     margin-bottom: 10px;
     margin-left: 57px;
@@ -313,7 +385,7 @@
 
 @media (min-width: @desktop-width) {
   .phone__input {
-    width: 372px;
+    width: 352px;
 
     margin-right: 11px;
     margin-left: 58px;
@@ -322,7 +394,7 @@
 
 @media (min-width: @desktop-width) {
   .email__input {
-    width: 372px;
+    width: 352px;
 
     margin-left: 58px;
   }
@@ -441,52 +513,12 @@
 
     padding-left: 0;
     margin-bottom: 32px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 59px;
-      z-index: 10;
-      top: 57px;
-      left: 317px;
-
-      background-color: #e5e5e5;
-      background-image: url("../img/icon-phone.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 58px;
-      z-index: 10;
-      top: 190px;
-      left: 317px;
-      background-color: #e5e5e5;
-      background-image: url("../img/icon-mail.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .contacts__heading {
     margin-bottom: 30px;
-
-    &::after {
-      height: 58px;
-      top: 55px;
-      left: 33px;
-    }
-
-    &::before {
-      top: 55px;
-      left: 479px;
-    }
   }
 }
 
@@ -725,21 +757,17 @@
 
   & textarea {
     display: flex;
-    width: 272px;
-    min-height: 193px;
+    width: 255px;
+    min-height: 180px;
     border: solid 2px #e5e5e5;
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: @bg-dark;
     font-weight: normal;
+    outline: none;
 
     margin-left: 20px;
-  }
-
-  & ::placeholder {
-    margin: 0;
-    padding: 0;
     padding-top: 13px;
     padding-left: 17px;
   }
@@ -754,8 +782,8 @@
     border: solid 2px #e5e5e5;
 
     & textarea {
-      width: 494px;
-      min-height: 184px;
+      width: 477px;
+      min-height: 171px;
 
       margin-left: 57px;
       margin-bottom: 52px;
@@ -769,8 +797,8 @@
     margin-left: 130px;
 
     & textarea {
-      width: 812px;
-      min-height: 120px;
+      width: 795px;
+      min-height: 107px;
 
       margin-bottom: 45px;
     }
@@ -876,7 +904,7 @@
 
 @media (min-width: @desktop-width) {
   .send {
-    margin-top: 44px;
+    margin-top: 47px;
   }
 }
 
@@ -900,12 +928,6 @@
 @media (min-width: @tablet-width) {
   .required-fields {
     margin-top: 68px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .required-fields {
-    margin-top: 65px;
   }
 }
 

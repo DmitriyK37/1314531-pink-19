@@ -67,7 +67,7 @@
     display: flex;
     position: absolute;
     top: -70px;
-    left: -19;
+    right: -35px;
     width: 238px;
     height: 276px;
     background-image: url("../img/icon-timer.svg");
@@ -90,6 +90,7 @@
       width: 298px;
       height: 345px;
       top: -87px;
+      right: -39px;
       background-size: 298px 345px;
     }
   }
@@ -104,6 +105,12 @@
   margin-bottom: 106px;
   margin-left: 88px;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .time__box {
+    margin-bottom: 63px;
+  }
 }
 
 @media (min-width: @desktop-width) {
