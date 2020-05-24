@@ -1,0 +1,182 @@
+.time__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .time__wrapper {
+    position: relative;
+    top: 12px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .time__wrapper {
+    top: 0;
+    background-color: @bg-light;
+    margin-bottom: 48px;
+  }
+}
+
+.time {
+  display: none;
+  position: relative;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  z-index: 6;
+
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .time {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .time {
+    background-color: @bg-light;
+  }
+}
+
+.watch {
+  display: flex;
+  position: relative;
+  width: 173px;
+  height: 173px;
+  font-size: 96px;
+  font-weight: bold;
+  color: #d22856;
+  align-items: center;
+  justify-content: center;
+
+  border: solid 15px #d22856;
+  border-radius: 50%;
+
+  margin: 0;
+  margin-top: 114px;
+  margin-left: 4px;
+  padding: 0;
+
+  &::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    top: -70px;
+    right: -35px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-size: 238px 276px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .watch {
+    width: 219px;
+    height: 219px;
+    font-size: 120px;
+    margin-top: 124px;
+    margin-left: -22px;
+    border: solid 16px #d22856;
+
+    &::after {
+      width: 298px;
+      height: 345px;
+      top: -87px;
+      right: -39px;
+      background-size: 298px 345px;
+    }
+  }
+}
+
+.time__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+
+  margin: 0;
+  margin-bottom: 106px;
+  margin-left: 88px;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .time__box {
+    margin-bottom: 63px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .time__box {
+    width: 530px;
+  }
+}
+
+.time__title {
+  width: 200px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: @bg-black;
+
+  margin: 0;
+  margin-top: 97px;
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .time__title {
+    min-width: 525px;
+    margin-top: 145px;
+    margin-bottom: 21px;
+    margin-left: 4px;
+  }
+}
+
+.time__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: @bg-dark;
+
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .time__description {
+    min-width: 530px;
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-left: 4px;
+  }
+}
+
+.time__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d22856;
+  text-decoration: underline;
+
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+@media (min-width: @desktop-width) {
+  .time__link {
+    font-size: 18px;
+    line-height: 30px;
+
+    margin-top: 31px;
+    margin-left: 4px;
+  }
+}
