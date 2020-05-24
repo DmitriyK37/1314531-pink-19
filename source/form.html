@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <svg style="display:none">
@@ -160,7 +160,7 @@
               </p>
               <p>
                 <label class="fields__title personal__title" for="patronymic">Отчество:</label>
-                <input class="profile-input patronymic-input" type="patronymic" id="name" name="patronymic" value="" placeholder="Ну и отчество тоже">
+                <input class="profile-input patronymic-input" type="text" id="patronymic" name="patronymic" value="" placeholder="Ну и отчество тоже">
               </p>
             </fieldset>
             <div class="form__progress__box">
@@ -227,15 +227,15 @@
               </fieldset>
             </div>
             <fieldset class="message">
-              <legend class="message-title" for="message">Опишите свои эмоции</legend>
+              <legend class="message-title">Опишите свои эмоции</legend>
               <textarea name="message" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
             <div class="form__send">
               <button type="submit" class="send">Отправить форму</button>
-              <span class="required-fields">
+              <div class="required-fields">
                 <p class="star">*</p>
-                — обязательные<p class="fill__fields">&nbspдля заполнения&nbsp</p>поля
-              </span>
+                — обязательные<p class="fill__fields">&nbsp;для заполнения&nbsp;</p>поля
+              </div>
             </div>
             <div class="modal-error modal--active">
               <p class="modal__title modal__title--error">Что-то пошло не&nbsp;так!</p>
