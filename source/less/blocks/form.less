@@ -3,13 +3,14 @@
   position: relative;
   flex-wrap: wrap;
   justify-content: center;
+
   margin: 0;
   padding: 0;
   background-color: #ffffff;
   z-index: 5;
 }
 
-.form-box__title {
+.heading__wrapper {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -18,23 +19,25 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form-box__title {
+  .heading__wrapper {
     display: inline;
     text-align: center;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form-box__title {
+  .heading__wrapper {
     width: 760px;
+
     margin-top: 91px;
   }
 }
 
-.form-box__heading {
+.form__heading {
   display: flex;
   text-align: center;
   align-items: center;
+
   font-size: 14px;
   line-height: 30px;
   color: @bg-dark;
@@ -46,7 +49,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form-box__heading {
+  .form__heading {
     font-size: 18px;
     line-height: 30px;
 
@@ -60,7 +63,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-box__heading {
+  .form__heading {
     &--top {
       display: inline;
     }
@@ -91,6 +94,7 @@
   display: flex;
   flex-direction: column;
   width: 320px;
+
   margin: 0;
   margin-top: 34px;
   padding: 0;
@@ -108,6 +112,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 1200px;
+
     margin-top: 71px;
   }
 }
@@ -119,6 +124,7 @@
 .form fieldset {
   & ul {
     list-style: none;
+
     margin: 0;
     padding: 0;
   }
@@ -132,14 +138,17 @@
   line-height: 30px;
   color: @bg-dark;
   font-weight: normal;
+
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
+
   border: none;
 
   & p {
     display: flex;
     flex-direction: column;
+
     margin: 0;
     padding: 0;
   }
@@ -175,6 +184,7 @@
     order: 3;
     background-color: #ffffff;
     border: solid 2px #e5e5e5;
+
     margin-left: 20px;
     margin-bottom: 19px;
 
@@ -198,12 +208,14 @@
   }
 }
 
-.profile__title {
+.fields__title {
   display: flex;
   font-size: 14px;
   line-height: 30px;
   color: #d22856;
+
   text-transform: uppercase;
+
   margin: 0;
   margin-left: 43px;
   padding: 0;
@@ -228,6 +240,7 @@
       top: -71px;
       left: 417px;
       right: 0;
+
       background-color: #e5e5e5;
       background-image: url("../img/icon-phone.svg");
       background-position: center;
@@ -265,7 +278,7 @@
   }
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .contacts__title--email {
     &::before {
       top: -71px;
@@ -293,6 +306,7 @@
   min-height: 59px;
   font-size: 18px;
   line-height: 30px;
+
   margin: 0;
   margin-left: 21px;
   margin-top: 5px;
@@ -300,6 +314,7 @@
   padding: 0;
   padding-left: 20px;
   outline: none;
+
   border: solid 2px #e5e5e5;
 
   &:hover {
@@ -314,6 +329,7 @@
 @media (min-width: @tablet-width) {
   .profile-input {
     width: 501px;
+
     margin-left: 19px;
     margin-bottom: 47px;
   }
@@ -322,6 +338,7 @@
 @media (min-width: @desktop-width) {
   .profile-input {
     width: 316px;
+
     margin-bottom: 47px;
   }
 }
@@ -329,6 +346,7 @@
 @media (min-width: @tablet-width) {
   .name-input {
     width: 541px;
+
     margin-left: 20px;
   }
 }
@@ -342,6 +360,7 @@
 @media (min-width: @tablet-width) {
   .patronymic-input {
     width: 502px;
+
     margin-bottom: 0;
     margin-left: 19px;
   }
@@ -358,6 +377,7 @@
   .email__input {
     position: relative;
     width: 476px;
+
     margin-bottom: 10px;
     margin-left: 57px;
   }
@@ -366,6 +386,7 @@
 @media (min-width: @desktop-width) {
   .phone__input {
     width: 352px;
+
     margin-right: 11px;
     margin-left: 58px;
   }
@@ -374,18 +395,20 @@
 @media (min-width: @desktop-width) {
   .email__input {
     width: 352px;
+
     margin-left: 58px;
   }
 }
 
-.form__progress {
+.form__progress__box {
   display: flex;
   background-color: @bg-light;
+
   margin-bottom: 32px;
 }
 
 @media (min-width: @tablet-width) {
-  .form__progress {
+  .form__progress__box {
     order: 4;
     background-color: #ffffff;
   }
@@ -404,9 +427,10 @@
   }
 }
 
-.form__progress__box {
+.form__progress {
   display: flex;
   flex-wrap: wrap;
+
   margin: 0;
   margin-top: 38px;
   margin-bottom: 0;
@@ -416,8 +440,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form__progress__box {
+  .form__progress {
     width: 616px;
+
     margin-left: 20px;
     background-color: #ffffff;
     border: solid 2px #e5e5e5;
@@ -425,9 +450,10 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form__progress__box {
+  .form__progress {
     width: 936px;
     min-height: 237px;
+
     margin-left: 130px;
     background-color: #ffffff;
     border: solid 2px #e5e5e5;
@@ -442,6 +468,7 @@
 @media (min-width: @desktop-width) {
   .sistem {
     width: 431px;
+
     margin-top: 0;
     margin-left: 49px;
   }
@@ -456,6 +483,7 @@
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
+
   margin: 0;
   margin-bottom: 46px;
   padding: 0;
@@ -466,6 +494,7 @@
   .form__progress__title {
     justify-content: center;
     width: 436px;
+
     margin-bottom: 51px;
     padding-left: 0;
   }
@@ -481,6 +510,7 @@
     position: relative;
     justify-content: center;
     width: 260px;
+
     padding-left: 0;
     margin-bottom: 32px;
   }
@@ -499,6 +529,7 @@
     display: flex;
     position: relative;
     font-size: 18px;
+
     margin: 0;
     margin-left: 89px;
     padding: 0;
@@ -601,6 +632,7 @@
     height: 35px;
     top: -7px;
     left: -70px;
+
     margin: 0;
     padding: 0;
     border: solid 2px #e5e5e5;
@@ -645,6 +677,7 @@
     height: 36px;
     top: -7px;
     left: -70px;
+
     margin: 0;
     padding: 0;
     border: solid 2px #e5e5e5;
@@ -681,6 +714,7 @@
     height: 15px;
     top: 5px;
     left: -57px;
+
     background: #d22856;
     border-radius: 50%;
   }
@@ -715,6 +749,7 @@
 .message {
   display: flex;
   flex-wrap: wrap;
+
   margin: 0;
   margin-top: 3px;
   padding: 0;
@@ -731,6 +766,7 @@
     color: @bg-dark;
     font-weight: normal;
     outline: none;
+
     margin-left: 20px;
     padding-top: 13px;
     padding-left: 17px;
@@ -748,6 +784,7 @@
     & textarea {
       width: 477px;
       min-height: 171px;
+
       margin-left: 57px;
       margin-bottom: 52px;
     }
@@ -762,6 +799,7 @@
     & textarea {
       width: 795px;
       min-height: 107px;
+
       margin-bottom: 45px;
     }
   }
@@ -772,6 +810,7 @@
   font-size: 14px;
   color: #d22856;
   text-transform: uppercase;
+
   margin: 0;
   margin-left: 68px;
   margin-bottom: 12px;
@@ -783,6 +822,7 @@
     text-align: center;
     justify-content: center;
     width: 260px;
+
     margin-bottom: 34px;
   }
 }
@@ -797,6 +837,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   margin: 0;
   margin-bottom: 34px;
   padding: 0;
@@ -806,6 +847,7 @@
   .form__send {
     order: 6;
     justify-content: space-between;
+
     margin: 20px;
     margin-bottom: 48px;
   }
@@ -815,6 +857,7 @@
   .form__send {
     width: 940px;
     justify-content: space-between;
+
     margin-left: 130px;
     margin-bottom: 0;
   }
@@ -834,6 +877,7 @@
   border: solid 2px #2aab6d;
   border-radius: 2px;
   outline: none;
+
   margin: 0;
   margin-top: 50px;
   padding: 0;
@@ -853,6 +897,7 @@
   .send {
     width: 300px;
     height: 63px;
+
     margin-top: 47px;
   }
 }
@@ -867,6 +912,7 @@
   display: flex;
   font-size: 14px;
   text-transform: uppercase;
+
   margin: 0;
   margin-top: 39px;
   padding: 0;
@@ -893,6 +939,7 @@
   .fill__fields {
     display: flex;
     color: @bg-dark;
+
     padding: 0;
     margin: 0;
   }

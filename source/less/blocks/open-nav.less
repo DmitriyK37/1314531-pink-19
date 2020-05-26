@@ -1,32 +1,31 @@
-.open-nav {
+.open-nav__wrapper {
   display: flex;
   width: 100%;
   justify-content: center;
-  background-color: @bg-dark;
 }
 
-.open-nav__logo {
+.page-header__logo {
   display: flex;
   height: 22px;
   margin: 0;
-  margin-top: 22px;
-  margin-right: 205px;
+  padding-top: 22px;
 }
 
 @media (min-width: @tablet-width) {
-  .open-nav__logo {
+  .page-header__logo {
     width: 147px;
     height: 40px;
-    margin-top: 28px;
-    margin-right: 470px;
+
+    margin-top: 6px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__logo-desktop {
+  .page-header__logo-desktop {
     width: 147px;
     height: 40px;
     fill: #ffffff;
+
     margin-top: 27px;
     margin-left: 130px;
     margin-right: 130px;
@@ -82,41 +81,42 @@
   }
 }
 
-.open-nav__wrapper {
+.open-nav {
   display: flex;
-  position: relative;
   justify-content: center;
   height: 66px;
-  width: 320px;
+  width: 100%;
   margin: 0;
   padding: 0;
+
   z-index: 3;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @tablet-width) {
-  .open-nav__wrapper {
-    width: 660px;
+  .open-nav {
     height: 110px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .open-nav__wrapper {
+  .open-nav {
     display: none;
   }
 }
 
 .main-nav__close {
-  position: absolute;
+  position: relative;
   width: 24px;
   height: 23px;
   cursor: pointer;
   border: none;
   outline: none;
   background: transparent;
+
   margin: 0;
-  top: 22px;
-  right: 41px;
+  margin-top: 22px;
+  margin-left: 182px;
   padding: 0;
 
   &:hover {
@@ -166,14 +166,14 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__close {
-    top: 46px;
-    right: 19px;
+    margin-top: 45px;
+    margin-left: 450px;
   }
 }
 
 .main-nav__toggle {
-  display: none;
-  position: absolute;
+  display: flex;
+  position: relative;
   width: 50px;
   height: 24px;
   cursor: pointer;
@@ -181,9 +181,12 @@
   border-top: 4px solid #ffffff;
   border-bottom: 4px solid #ffffff;
   outline: none;
-  top: 21px;
-  right: 21px;
+  top: 15px;
   background: transparent;
+
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 155px;
 
   &:hover {
     border-top: 4px solid #d22856;
@@ -208,6 +211,7 @@
     width: 50px;
     height: 4px;
     background-color: #ffffff;
+
     top: 6px;
     left: 0;
   }
@@ -215,7 +219,7 @@
 
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
-    top: 45px;
-    right: 20px;
+    margin-top: 30px;
+    margin-left: 422px;
   }
 }
