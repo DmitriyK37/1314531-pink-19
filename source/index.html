@@ -97,9 +97,9 @@
       </symbol>
     </svg>
     <header class="page-header">
-      <div class="open-nav__wrapper">
-        <div class="open-nav">
-          <a href="index.html" class="page-header__logo" aria-label="Ссылка с логотипом на главную страницу">
+      <div class="open-nav">
+        <div class="open-nav__wrapper">
+          <a href="index.html" class="open-nav__logo" aria-label="Ссылка с логотипом на главную страницу">
             <svg class="logo__image-mobile" width="74.426px" height="22.859px" role="img" aria-label="Логотип Пинк" focusable="false">
               <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
@@ -111,26 +111,26 @@
           <button class="main-nav__close close" type="button" aria-label="Закрыть меню"></button>
         </div>
       </div>
-      <nav class="main-nav close">
+      <nav class="main-nav open">
         <div class="main-nav__box">
         <div class="main-nav__wrapper">
-          <a class="page-header__logo-desktop" href="index.html">
+          <a class="main-nav__logo-desktop" href="index.html">
             <svg class="logo__image-desktop" width="146.3px" height="40.375px" role="img" aria-label="Логотип Пинк" focusable="false">
               <use xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="item__link">Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="item__link" href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a class="item__link" href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a class="item__link" href="#">HTML Academy</a>
+              <a class="site-list__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -140,7 +140,7 @@
     <main class="page-main page-main--index">
       <h1 class="visually-hidden">Здесь можно скачать приложение.Почитать отзывы.</h1>
       <div class="intro intro-index">
-        <h2 class="intro__heading index__header">Взгляните на жизнь иначе!</h2>
+        <h2 class="intro__heading intro__heading--index">Взгляните на жизнь иначе!</h2>
         <div class="intro__wrapper">
           <a href="https://www.apple.com/ru/ios/app-store/" target="_blank" class="intro__button">Скачать приложение</a>
           <ul class="intro__applications">
@@ -329,7 +329,7 @@
               </div>
               <div class="questions__write">
                 <span class="questions__heading">Пишите:</span>
-                <a class="contacts__mail" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               </div>
               <div class="questions__come">
                 <span class="questions__heading">Приезжайте в гости:</span>
@@ -382,19 +382,33 @@
       } catch (err) {
       isStorageSupport = false;
       }
+      var menuDefault = document.querySelector(".open-nav__wrapper");
 
       var menu = document.querySelector(".main-nav");
 
-      var menuDefault = document.querySelector(".open-nav");
+      var menuColor = document.querySelector(".open-nav");
 
       var closeMenu = document.querySelector(".main-nav__close");
 
       var openMenu = document.querySelector(".main-nav__toggle");
 
+      document.querySelector (".main-nav")
+      .classList.remove("open");
+
+      document.querySelector (".main-nav")
+      .classList.add("close");
+
+      document.querySelector (".main-nav__toggle")
+      .classList.add("open");
+
+      document.querySelector (".open-nav")
+      .classList.add("background-open");
+
       openMenu.addEventListener("click", function (evt) {
         evt.preventDefault();
         menu.classList.remove("close")
         menu.classList.add("open");
+        menuColor.classList.remove("background-open");
         menuDefault.classList.add("open");
         openMenu.classList.add("close")
         closeMenu.classList.remove("close");
@@ -409,6 +423,7 @@
         menu.classList.remove("open")
         menu.classList.add("close")
         menuDefault.classList.remove("open");
+        menuColor.classList.add("background-open");
       });
     </script>
   </body>

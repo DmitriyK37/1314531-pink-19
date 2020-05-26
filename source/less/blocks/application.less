@@ -85,7 +85,6 @@
 
 .application__picture {
   display: flex;
-
   margin: 0;
   padding: 0;
 
@@ -125,7 +124,6 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-
   margin: 0;
   margin-bottom: 75px;
   padding: 0;
@@ -379,8 +377,9 @@
   height: 2px;
   top: 84px;
   left: -18px;
-  background-color: @bg-dark;
+  background-color: rgba(40, 54, 69);
   outline: none;
+  color: transparent;
 
   &::-webkit-slider-thumb {
     appearance: none;
@@ -388,15 +387,31 @@
     height: 15px;
     padding: 0;
     box-sizing: border-box;
-    border: 2px solid #d22856;
+    border: 2px solid rgba(210, 40, 86, 1);
     border-radius: 50%;
     background-color: #f2f2f2;
     cursor: pointer;
 
     &:hover {
-      background-color: #d22856;
+      background-color: rgba(210, 40, 86, 1);
     }
   }
+}
+
+.filters__scale::-ms-fill-lower,
+.filters__scale::-ms-fill-upper {
+  appearance: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.filters__scale::-ms-thumb {
+  width: 14px;
+  height: 15px;
+  border: 1px solid rgba(210, 40, 86, 1);
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -458,7 +473,6 @@
 .application__button {
   display: flex;
   flex-wrap: wrap;
-
   margin: 0;
   margin-top: 150px;
   padding: 0;
